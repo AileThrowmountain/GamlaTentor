@@ -1,0 +1,24 @@
+﻿<Window x:Class="PaSparetTenta.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PaSparetTenta"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="labelTvådelad" Content="Tvådelad Fråga" HorizontalAlignment="Left" Margin="47,26,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelQ1" Content="1. Vad heter Italiens och även Europas högsta vulkan?" HorizontalAlignment="Left" Margin="47,52,0,0" VerticalAlignment="Top" Width="533"/>
+        <Label x:Name="labelQ2" Content="2. I hur många Italienska lag har Zlatan spelat i?" HorizontalAlignment="Left" Margin="47,78,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelAnswer1" Content="Fråga 1" HorizontalAlignment="Left" Margin="47,171,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxA1" HorizontalAlignment="Left" Height="23" Margin="47,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="labelAnswer2" Content="Fråga 2" HorizontalAlignment="Left" Margin="47,236,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxA2" HorizontalAlignment="Left" Height="23" Margin="47,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="labelPoints" FontSize="18" Content="Poäng" HorizontalAlignment="Left" Margin="198,163,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelNmbrofPoint" FontSize="30" Content="0" HorizontalAlignment="Left" Margin="215,197,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonGuess" FontSize="20" FontWeight="Bold" Content="Gissa" HorizontalAlignment="Left" Margin="57,315,0,0" VerticalAlignment="Top" Width="96" Height="41" Click="buttonGuess_Click"/>
+        <ListBox x:Name="listBoxLista" HorizontalAlignment="Left" Height="273" Margin="404,83,0,0" VerticalAlignment="Top" Width="238"/>
+        <Button x:Name="buttonlst" Content="Listknapp" HorizontalAlignment="Left" Margin="308,315,0,0" VerticalAlignment="Top" Width="75" Click="buttonlst_Click"/>
+
+    </Grid>
+</Window>

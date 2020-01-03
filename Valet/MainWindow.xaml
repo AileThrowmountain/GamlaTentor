@@ -1,0 +1,19 @@
+﻿<Window x:Class="Valet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Valet"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnVote" Content="Rösta" HorizontalAlignment="Left" Margin="123,294,0,0" VerticalAlignment="Top" Width="75" Click="btnVote_Click"/>
+        <RadioButton x:Name="radioBtnNo" Content="Nej (A)" HorizontalAlignment="Left" Margin="123,207,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioBtnYes" Content="Ja (B)" HorizontalAlignment="Left" Margin="123,227,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioBtnNoOppinion" Content="Ingen åsikt (C)" HorizontalAlignment="Left" Margin="123,247,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelFolkomröstning" Content="Folkomröstning" HorizontalAlignment="Left" Margin="123,120,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelQ" Content="Tycker du att Tibro kommun ska genomföra en lasknl?" HorizontalAlignment="Left" Margin="123,151,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonPresent" Content="Presentera" HorizontalAlignment="Left" Margin="365,281,0,0" VerticalAlignment="Top" Width="75" Click="buttonPresent_Click"/>
+
+    </Grid>
+</Window>

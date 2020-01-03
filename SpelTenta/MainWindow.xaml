@@ -1,0 +1,23 @@
+﻿<Window x:Class="SpelTenta.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpelTenta"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="buttonStart" Content="Starta" HorizontalAlignment="Left" Margin="141,214,0,0" VerticalAlignment="Top" Width="75" Click="buttonStart_Click"/>
+        <Label x:Name="labelA" Content="*" FontSize="35" HorizontalAlignment="Left" Margin="95,104,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelB" Content="*" FontSize="35" HorizontalAlignment="Left" Margin="174,104,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="labelC" Content="*" FontSize="35" HorizontalAlignment="Left" Margin="266,104,0,0" VerticalAlignment="Top"/>
+        <StackPanel HorizontalAlignment="Left" Height="100" Margin="489,182,0,0" VerticalAlignment="Top" Width="100">
+            <Label x:Name="labelSvit" Content=""/>
+            <Label x:Name="labelTyp" Content=""/>
+        </StackPanel>
+        <Button x:Name="buttonHigher" Content="Högre" HorizontalAlignment="Left" Margin="611,219,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="buttonLower" Content="Lägre" HorizontalAlignment="Left" Margin="611,262,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="393,282,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+
+    </Grid>
+</Window>
