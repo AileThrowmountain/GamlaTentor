@@ -79,5 +79,11 @@ namespace Tågtenta
             listBoxSäten.ItemsSource = null;
             listBoxSäten.ItemsSource = wagon.GetFreeSeats(3);
         }
+
+        private void buttonSätesPar_Click(object sender, RoutedEventArgs e)
+        {
+            listBoxSäten.ItemsSource = null;
+            listBoxSäten.ItemsSource = wagon.GetFreeSeatPair();
+        }
     }
 }

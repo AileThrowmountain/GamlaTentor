@@ -17,7 +17,7 @@ namespace PaSparetTenta
             for (int i = 1; i < 50; i++)
             {
                 Question question = new Question(i); //tilldelar varje gång objektet skapar tack vare måsvingar
-
+                i = question.Number;
                 questions.Add(question);
             }
         }
@@ -35,6 +35,11 @@ namespace PaSparetTenta
             }
 
             return onlyUnansweredQuestions; // Returnera din lista som enbart innehåller obesvarade frågor
+        }
+
+        public override string ToString()
+        {
+            return ($"Fråga nummer {}"; 
         }
 
     }

@@ -82,5 +82,32 @@ namespace Tågtenta
 
 
         }
+
+        public List<Seat> GetFreeSeatPair()
+        { int counter = 0;
+            int seatNext = 0;
+            List<Seat> FreeSeatPair = new List<Seat>();
+            foreach (Seat currentseat in ListSeats)
+            {
+
+                if (!currentseat.IsTaken)
+                {
+                    if (currentseat.SeatNumber % 1 == 0)
+                    {
+                        seatNext = currentseat.SeatNumber += currentseat.SeatNumber +1;
+                        counter++;
+                        FreeSeatPair.Add(currentseat);
+                        return FreeSeatPair;
+                    }
+                    
+                    
+                }
+                
+            }
+
+        
+
+            return null;
+        }
     }
 }

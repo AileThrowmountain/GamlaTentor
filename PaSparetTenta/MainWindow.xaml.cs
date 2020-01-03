@@ -53,6 +53,7 @@ namespace PaSparetTenta
         private void buttonlst_Click(object sender, RoutedEventArgs e)
         {
             programme.GetUnansweredQuestions();
+            listBoxLista.ItemsSource = programme.GetUnansweredQuestions();
         }
     }
 }
