@@ -14,11 +14,12 @@ namespace Tågtenta
 
         public Wagon(int numberOfSeats)
         {
-            
+
             for (int i = 1; i <= numberOfSeats; i++) //den börjar på 1 och slutar först när den är mindre eller lika med 32
             {
                 Seat seat = new Seat(i); // varje nytt säte  ska tilldelas indexnummer (i seat klassen har jag tilldelat porpertie i en konstruktor)
                 ListSeats.Add(seat); //(lägger till säte i listan
+
                 if (i % 2 == 0)
                 {
                     seat.Type = "Gång";
@@ -84,30 +85,58 @@ namespace Tågtenta
         }
 
         public List<Seat> GetFreeSeatPair()
-        { int counter = 0;
-            int seatNext = 0;
+        {
             List<Seat> FreeSeatPair = new List<Seat>();
             foreach (Seat currentseat in ListSeats)
             {
+                int even = currentseat.SeatNumber % 2;
 
-                if (!currentseat.IsTaken)
+                if (!currentseat.IsTaken && even != 0)
                 {
-                    if (currentseat.SeatNumber % 1 == 0)
+                    if (ListSeats[ListSeats.IndexOf(currentseat) + 1].IsTaken == false)
                     {
-                        seatNext = currentseat.SeatNumber += currentseat.SeatNumber +1;
-                        counter++;
+
                         FreeSeatPair.Add(currentseat);
+                        FreeSeatPair.Add(ListSeats[ListSeats.IndexOf(currentseat) + 1]);
                         return FreeSeatPair;
                     }
-                    
-                    
                 }
-                
             }
-
-        
-
             return null;
         }
+
+
+
     }
 }
+
+
+
+//public List<Seat> GetFreeSeatPair()
+//{
+//    int counter = 0;
+
+//    List<Seat> FreeSeatPair = new List<Seat>();
+//    foreach (Seat currentseat in ListSeats)
+//    {
+
+//        if (!currentseat.IsTaken)
+//        {
+//            if (currentseat.SeatNumber % 1 == 0)
+//            {
+
+//                counter++;
+//                FreeSeatPair.Add(currentseat);
+//                return FreeSeatPair;
+//            }
+
+
+//        }
+
+//    }
+
+
+
+//        return null;
+//    }
+//}

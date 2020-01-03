@@ -15,7 +15,8 @@
         <Button x:Name="buttonSeats" Content="Skapa säten" HorizontalAlignment="Left" Margin="259,261,0,0" VerticalAlignment="Top" Width="99" Height="23" Click="buttonSeats_Click"/>
         <ListBox x:Name="listBoxSäten" HorizontalAlignment="Left" Height="207" Margin="406,51,0,0" VerticalAlignment="Top" Width="229" />
         <Button x:Name="buttontravelers" Content="Antal resenärer" HorizontalAlignment="Left" Margin="406,281,0,0" VerticalAlignment="Top" Width="75" Click="buttontravelers_Click"/>
-        <Button x:Name="buttonSätesPar" Content="Sitta Bredvid" HorizontalAlignment="Left" Margin="546,284,0,0" VerticalAlignment="Top" Width="75" Click="buttonSätesPar_Click"/>
+        <Button x:Name="buttonSätesPar" Content="Sitta Bredvid" HorizontalAlignment="Left" Margin="653,281,0,0" VerticalAlignment="Top" Width="75" Click="buttonSätesPar_Click"/>
+        <ListBox x:Name="listBoxSätesPar" HorizontalAlignment="Left" Height="113" Margin="653,145,0,0" VerticalAlignment="Top" Width="103"/>
 
     </Grid>
 </Window>
