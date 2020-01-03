@@ -23,6 +23,7 @@ namespace SpelTenta
         public MainWindow()
         {
             InitializeComponent();
+            SlumpCard();
         }
 
         Kortlek kortlek = new Kortlek();
@@ -46,8 +47,8 @@ namespace SpelTenta
         }
         public void JackPot(string A, string B, string C)
         {
-            
-            if (A == "O" && B =="O" && C=="O")
+
+            if (A == "O" && B == "O" && C == "O")
             {
                 MessageBox.Show("JACKPOT!!");
             }
@@ -61,12 +62,81 @@ namespace SpelTenta
             }
 
         }
+        Kort kort = null;
+        public void SlumpCard()
+        {
+            kortlek.SkapaKortlek();
+            kortlek.DraSlumpmässigtKort();
+            kort = kortlek.DraSlumpmässigtKort();
+            labelSvit.Content = kort.Svit;
+            labelTyp.Content = kort.Korttyp;
+            
+        }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Kort kort = new Kort();
-            kortlek.SkapaKortlek();
-            kort.DraSlumpmässigtKort();
+            SlumpCard();
+
         }
+        int antalratt = 0;
+        int personbasta = 0;
+        private void buttonHigher_Click(object sender, RoutedEventArgs e)
+        {
+            Kort nyttKort = kortlek.DraSlumpmässigtKort();
+           
+            if (nyttKort.Värde > kort.Värde)
+            {
+                MessageBox.Show("Rätt");
+                antalratt++;
+                labelARShow.Content = antalratt;
+                
+            }
+            
+            else
+            {
+                antalratt = 0;
+                labelARShow.Content = antalratt;
+                
+            }
+            kort = nyttKort;
+            labelSvit.Content = kort.Svit;
+            labelTyp.Content = kort.Korttyp;
+            RaknaAllaRatt();
+
+        }
+
+        private void buttonLower_Click(object sender, RoutedEventArgs e)
+        {
+            Kort nyttKort = kortlek.DraSlumpmässigtKort();
+            if (nyttKort.Värde < kort.Värde)
+            {
+                MessageBox.Show("Rätt");
+                antalratt++;
+            }
+            kort = nyttKort;
+            labelSvit.Content = kort.Svit;
+            labelTyp.Content = kort.Korttyp;
+            RaknaAllaRatt();
+
+        }
+        public void RaknaAllaRatt()
+        {
+
+            for (int i = 0; i < antalratt; i++)
+            {   
+                personbasta++;
+
+                if (personbasta > antalratt)
+                {
+                    antalratt = personbasta;
+
+                }
+               
+            }
+            labelPBShow.Content = personbasta;
+        }
+
     }
 }
+
+ 

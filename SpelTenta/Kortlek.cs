@@ -47,17 +47,15 @@ namespace SpelTenta
             }
         }
 
-        public void DraSlumpmässigtKort()
-        { int index = 0;
+        public Kort DraSlumpmässigtKort()
+        { 
             
             Random NyttKort = new Random();
+            int index = 0;
+            index = NyttKort.Next(ListaAvKort.Count);
             Kort kort = ListaAvKort[index];
-            NyttKort.Next(kort.Svit[index]);
-            NyttKort.Next(kort.Värde);
-            string sviten = kort.Svit;
-            int värdet = kort.Värde;
-            
 
+            return kort;
             
         }
 

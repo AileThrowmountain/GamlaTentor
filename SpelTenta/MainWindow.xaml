@@ -15,9 +15,13 @@
             <Label x:Name="labelSvit" Content=""/>
             <Label x:Name="labelTyp" Content=""/>
         </StackPanel>
-        <Button x:Name="buttonHigher" Content="Högre" HorizontalAlignment="Left" Margin="611,219,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="buttonLower" Content="Lägre" HorizontalAlignment="Left" Margin="611,262,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="buttonHigher" Content="Högre" HorizontalAlignment="Left" Margin="611,219,0,0" VerticalAlignment="Top" Width="75" Click="buttonHigher_Click"/>
+        <Button x:Name="buttonLower" Content="Lägre" HorizontalAlignment="Left" Margin="611,262,0,0" VerticalAlignment="Top" Width="75" Click="buttonLower_Click"/>
         <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="393,282,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Label x:Name="labelPB" Content="Personbästa" HorizontalAlignment="Left" Margin="489,287,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelAR" Content="Antal Rätt" HorizontalAlignment="Left" Margin="525,349,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelPBShow" Content="" HorizontalAlignment="Left" Margin="506,313,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelARShow" Content="" HorizontalAlignment="Left" Margin="535,380,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
