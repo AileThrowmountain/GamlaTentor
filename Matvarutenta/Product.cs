@@ -31,6 +31,8 @@ namespace Matvarutenta
 
 
         }
+
+
         public override string ToString()
         {
             return ($"{Type} {Price:C}");

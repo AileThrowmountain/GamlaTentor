@@ -24,8 +24,10 @@ namespace Matvarutenta
         {
             InitializeComponent();
         }
-        
+
         Varukorg varukorg = new Varukorg(); // skapar ett objekt för att kunna anropa List<Varukorg>
+
+
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         { //började med att göra variabler att koppla till textboxarna
 
@@ -36,11 +38,39 @@ namespace Matvarutenta
             Product minaVaror = new Product(type, numberOf, price); //skapar ett objekt för att kunna lägga till mina värden från textboxarna
             varukorg.AddProduct(minaVaror);
 
+            if (varukorg.IsItToMuch(varukorg.GetTotalSum(), CountProducts()) == true)
+            {
+                MessageBox.Show("Du har överstigit din budget, prova lägg tillbaka en vara");
+                varukorg.varulista.Remove(minaVaror);
+            }
+
+            labelSUMMAN.Content = ($"{varukorg.GetTotalSum():C}");
+            labelnumberofPShow.Content = ($"{CountProducts()}");
+            listBoxGroceries.ItemsSource = null;
+            listBoxGroceries.ItemsSource = varukorg.varulista;
+
+        }
+        public int CountProducts()// gör en metod för att räkna antalvaror i varukorgen
+        {
+            int number = 0;
+            foreach (Product product in varukorg.varulista)
+            {
+
+                number += product.NumberOf; // antal av varje varor ska adderas, tilldelas int number.
+                
+            }
+            return number;
+        }
+        Product selectedProduct = new Product();
+        private void buttonRemove_Click(object sender, RoutedEventArgs e)
+        {
+            selectedProduct = (Product)listBoxGroceries.SelectedItem;
+            varukorg.varulista.Remove(selectedProduct);
             listBoxGroceries.ItemsSource = null;
             listBoxGroceries.ItemsSource = varukorg.varulista;
 
             labelSUMMAN.Content = ($"{varukorg.GetTotalSum():C}");
-
+            labelnumberofPShow.Content = ($"{CountProducts()}");
 
         }
     }

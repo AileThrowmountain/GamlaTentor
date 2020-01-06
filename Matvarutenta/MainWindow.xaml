@@ -13,9 +13,12 @@
         <Label x:Name="labelNumber" Content="Antal" HorizontalAlignment="Left" Margin="78,106,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="textBoxPris" HorizontalAlignment="Left" Height="23" Margin="78,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="labelPrice" Content="Pris" HorizontalAlignment="Left" Margin="78,159,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="buttonAdd" Content="Lägg till i varukorg" HorizontalAlignment="Left" Margin="78,236,0,0" VerticalAlignment="Top" Width="120" Height="62" Click="buttonAdd_Click"/>
+        <Button x:Name="buttonAdd" Content="Lägg till i varukorg" HorizontalAlignment="Left" Margin="78,224,0,0" VerticalAlignment="Top" Width="120" Height="37" Click="buttonAdd_Click"/>
         <ListBox x:Name="listBoxGroceries" HorizontalAlignment="Left" Height="219" Margin="251,79,0,0" VerticalAlignment="Top" Width="205"/>
         <Label x:Name="labelSUMMAN" Content="" HorizontalAlignment="Left" Margin="493,190,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelnumberOfProducts" Content="Antal varor: " HorizontalAlignment="Left" Margin="251,298,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelnumberofPShow" Content="" HorizontalAlignment="Left" Margin="410,298,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.465,0.099" Width="46"/>
+        <Button x:Name="buttonRemove" Content="Ta bort ur varukorg" HorizontalAlignment="Left" Margin="78,266,0,0" VerticalAlignment="Top" Width="120" Height="32" Click="buttonRemove_Click"/>
 
     </Grid>
 </Window>
