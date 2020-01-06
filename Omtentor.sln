@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tågtenta", "Tågtenta\Tågtenta.csproj", "{DF5CE461-8935-43D1-9FFE-2C6DD8669660}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tågtenta - AVKLARAD", "Tågtenta\Tågtenta - AVKLARAD.csproj", "{DF5CE461-8935-43D1-9FFE-2C6DD8669660}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valet", "Valet\Valet.csproj", "{CDD9D2BA-76C5-49DE-A264-F95BCDFE51D5}"
 EndProject
@@ -11,9 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValetUppg2", "ValetUppg2\Va
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValUppgift3", "ValUppgift3\ValUppgift3.csproj", "{0ACAB709-4AD3-44D3-BE57-C8784A1A9AFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpelTenta", "SpelTenta\SpelTenta.csproj", "{DB29A363-DA8E-4778-856E-52D9E74675A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpelTenta - AVKLARAD", "SpelTenta\SpelTenta - AVKLARAD.csproj", "{DB29A363-DA8E-4778-856E-52D9E74675A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eggtenta", "Eggtenta\Eggtenta.csproj", "{0AB408A7-698F-42FB-8193-82DEBA7C4D10}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eggtenta - AVKLARAD", "Eggtenta\Eggtenta - AVKLARAD.csproj", "{0AB408A7-698F-42FB-8193-82DEBA7C4D10}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaSparetTenta", "PaSparetTenta\PaSparetTenta.csproj", "{31D44744-9C97-40E0-A5FA-05314E66255F}"
 EndProject

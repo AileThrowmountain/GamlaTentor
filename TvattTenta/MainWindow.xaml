@@ -7,7 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="324,108,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="55*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="137,108,0,0" VerticalAlignment="Top" Width="75" Click="button_Click" Grid.Column="1"/>
+        <Button x:Name="button1" Content="Fredag" HorizontalAlignment="Left" Margin="144,239,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="button3" Content="Lördag" HorizontalAlignment="Left" Margin="144,264,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="listBoxKläder" HorizontalAlignment="Left" Height="144" Margin="23,140,0,0" VerticalAlignment="Top" Width="116"/>
 
     </Grid>
 </Window>

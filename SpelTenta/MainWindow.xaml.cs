@@ -87,8 +87,7 @@ namespace SpelTenta
             if (nyttKort.Värde > kort.Värde)
             {
                 MessageBox.Show("Rätt");
-                antalratt++;
-                labelARShow.Content = antalratt;
+                RaknaAllaRatt();
                 
             }
             
@@ -101,7 +100,7 @@ namespace SpelTenta
             kort = nyttKort;
             labelSvit.Content = kort.Svit;
             labelTyp.Content = kort.Korttyp;
-            RaknaAllaRatt();
+            
 
         }
 
@@ -111,28 +110,26 @@ namespace SpelTenta
             if (nyttKort.Värde < kort.Värde)
             {
                 MessageBox.Show("Rätt");
-                antalratt++;
+                RaknaAllaRatt();
+            }
+            else
+            {
+                antalratt = 0;
+                labelARShow.Content = antalratt;
             }
             kort = nyttKort;
             labelSvit.Content = kort.Svit;
             labelTyp.Content = kort.Korttyp;
-            RaknaAllaRatt();
-
+            
         }
         public void RaknaAllaRatt()
         {
-
-            for (int i = 0; i < antalratt; i++)
-            {   
-                personbasta++;
-
-                if (personbasta > antalratt)
-                {
-                    antalratt = personbasta;
-
-                }
-               
+            antalratt++;
+            if(antalratt > personbasta)
+            {
+                personbasta = antalratt;
             }
+            labelARShow.Content = antalratt;
             labelPBShow.Content = personbasta;
         }
 
