@@ -1,0 +1,21 @@
+﻿<Window x:Class="Matvarutenta.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Matvarutenta"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="textBoxType" HorizontalAlignment="Left" Height="23" Margin="78,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="labelType" Content="Namn på vara" HorizontalAlignment="Left" Margin="78,53,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxNumber" HorizontalAlignment="Left" Height="23" Margin="78,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="labelNumber" Content="Antal" HorizontalAlignment="Left" Margin="78,106,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxPris" HorizontalAlignment="Left" Height="23" Margin="78,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="labelPrice" Content="Pris" HorizontalAlignment="Left" Margin="78,159,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonAdd" Content="Lägg till i varukorg" HorizontalAlignment="Left" Margin="78,236,0,0" VerticalAlignment="Top" Width="120" Height="62" Click="buttonAdd_Click"/>
+        <ListBox x:Name="listBoxGroceries" HorizontalAlignment="Left" Height="219" Margin="251,79,0,0" VerticalAlignment="Top" Width="205"/>
+        <Label x:Name="labelSUMMAN" Content="" HorizontalAlignment="Left" Margin="493,190,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
