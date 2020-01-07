@@ -39,5 +39,41 @@ namespace Skidtenta
                 MessageBox.Show($"Dina stavar får vara {myStick} cm");
             }
         }
+
+        public string VilkenVallaburk(int temp)
+        {
+            if (temp <=  (-20))
+            {
+                return "Du måste välja en vit vallaburk!";
+            }
+            else if (temp >= (-19) && temp <=(-10))
+            {
+                return "Du måste välja en grön vallaburk!";
+
+            }
+            else if (temp >= (-9) && temp <= (-3))
+            {
+                return "Du måste välja en blå vallaburk!";
+
+            }
+            else if (temp >= (-2) && temp <= 1)
+            {
+                return "Du måste välja en violett vallaburk!";
+
+            }
+            else
+            
+                return "Du måste välja en röd vallaburk!";
+
+            
+
+        }
+
+        private void buttonVallaburk_Click(object sender, RoutedEventArgs e)
+        {
+            int temp = int.Parse(textBoxValla.Text);
+            MessageBox.Show($"{VilkenVallaburk(temp)}");
+
+        }
     }
 }
