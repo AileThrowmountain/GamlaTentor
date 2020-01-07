@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eggtenta - AVKLARAD", "Eggt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaSparetTenta", "PaSparetTenta\PaSparetTenta.csproj", "{31D44744-9C97-40E0-A5FA-05314E66255F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvattTenta", "TvattTenta\TvattTenta.csproj", "{42399013-3B8D-49BB-AD47-B1C7CDB3ABF4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvattTenta - AVKLARAD", "TvattTenta\TvattTenta - AVKLARAD.csproj", "{42399013-3B8D-49BB-AD47-B1C7CDB3ABF4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matvarutenta - AVKLARAD", "Matvarutenta\Matvarutenta - AVKLARAD.csproj", "{1D3298AB-77A5-414F-A754-31B86F783185}"
 EndProject
