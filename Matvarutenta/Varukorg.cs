@@ -28,9 +28,8 @@ namespace Matvarutenta
         public void AddProduct(Product product)
         {
             varulista.Add(product);
-            
+ 
         }
-
 
         public double GetTotalSum()
         {

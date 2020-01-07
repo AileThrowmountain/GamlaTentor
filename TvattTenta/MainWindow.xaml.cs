@@ -19,11 +19,11 @@ namespace TvattTenta
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
+    {   Person person = new Person();
         public MainWindow()
         {
             InitializeComponent();
-            Person person = new Person();
+            
             person.NewWardrobe();
         }
         
@@ -121,11 +121,17 @@ namespace TvattTenta
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Person personenslista = new Person();
+            
             listBoxKläder.ItemsSource = null;
-            listBoxKläder.ItemsSource = personenslista.CollectionFriday;
-            listBoxKläder.ItemsSource = personenslista.CollectionSaturday;
+            listBoxKläder.ItemsSource = person.CollectionFriday;
+            
 
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            listBoxKläder.ItemsSource = null;
+            listBoxKläder.ItemsSource = person.CollectionSaturday;
         }
 
         //måste antagligen göra en metod med en lista där kläderna läggs till i klassen.

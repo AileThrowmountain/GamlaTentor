@@ -26,6 +26,7 @@ namespace Matvarutenta
         }
 
         Varukorg varukorg = new Varukorg(); // skapar ett objekt för att kunna anropa List<Varukorg>
+        Triss triss = new Triss();
 
 
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
@@ -72,6 +73,21 @@ namespace Matvarutenta
             labelSUMMAN.Content = ($"{varukorg.GetTotalSum():C}");
             labelnumberofPShow.Content = ($"{CountProducts()}");
 
+        }
+        Random vinstchans = new Random();
+        private void buttonTriss_Click(object sender, RoutedEventArgs e)
+        {
+            int[] vinster = new int[] { 30, 60, 120 };
+            
+
+            if (triss.IsTriss() == true)
+            {
+               int vinst = vinster[vinstchans.Next(3)];
+               MessageBox.Show($"DU VANN {vinst} SPÄNN!!!!!!");
+                
+
+            }
+            
         }
     }
 }

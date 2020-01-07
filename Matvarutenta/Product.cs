@@ -8,12 +8,9 @@ namespace Matvarutenta
 {
     class Product
     {
-
         public string Type { get; set; }
-
         public int NumberOf { get; set; }
         public double Price { get; set; }
-
 
         public Product()
         {
@@ -23,15 +20,9 @@ namespace Matvarutenta
         public Product(string type, int numberOf, double price)
         {
             Type = type;
-
             NumberOf = numberOf;
-  
             Price = price;
-
-
-
         }
-
 
         public override string ToString()
         {
