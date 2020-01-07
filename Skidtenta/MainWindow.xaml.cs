@@ -111,11 +111,13 @@ namespace Skidtenta
              new Tävlande() {Namn ="STUERZ Giulia",Land="ITA",Bonussekunder = new int[]{2,0,0,0,0,2}},
              new Tävlande() {Namn ="ZHAMBALOVA Alisa",Land="RUS",Bonussekunder = new int[]{1,0,0,0,0,1}}
              };
-
+          
             int index = 1;
+            
             foreach (Tävlande current in startlista)
             {
-                lstBonus.Items.Add($"{index}. {current.Namn} {current.Land}");
+                int bonussekunder = current.Bonussekunder[0]+ current.Bonussekunder[1]+ current.Bonussekunder[2] + current.Bonussekunder[3]+current.Bonussekunder[4] + current.Bonussekunder[5];
+                lstBonus.Items.Add($"{index}. {current.Namn} {current.Land} {bonussekunder}");
                 index++;
             }
             // ett sätt att lägga till i listbox

@@ -8,7 +8,7 @@ namespace Skidtenta
 {
     class Tävlande
     {
-        public int[] Bonussekunder { get; set; } = new int[5];
+        public int[] Bonussekunder { get; set; } 
         public string Land { get; set; }
         public string Namn { get; set; }
 
