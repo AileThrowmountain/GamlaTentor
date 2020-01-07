@@ -117,9 +117,13 @@ namespace Skidtenta
             foreach (Tävlande current in startlista)
             {
                 int bonussekunder = current.Bonussekunder[0]+ current.Bonussekunder[1]+ current.Bonussekunder[2] + current.Bonussekunder[3]+current.Bonussekunder[4] + current.Bonussekunder[5];
-                lstBonus.Items.Add($"{index}. {current.Namn} {current.Land} {bonussekunder}");
+                Tävlande ledare = startlista[0]; //för att välja första personen i listan
+                int refTid = ledare.Bonussekunder[0] + ledare.Bonussekunder[1] + ledare.Bonussekunder[2] + ledare.Bonussekunder[3] + ledare.Bonussekunder[4] + ledare.Bonussekunder[5]; // för att ha något att jämföra bonussekunder med
+                int startTid = refTid - bonussekunder;
+                lstBonus.Items.Add($"{index}. {current.Namn} {current.Land} {TidsDifferens(startTid)}");
                 index++;
             }
+
             // ett sätt att lägga till i listbox
             //for (int i = 0; i < startlista.Count; i++)
             //{
@@ -127,6 +131,22 @@ namespace Skidtenta
             //    lstBonus.Items.Add(startlista[i]);
             //}
 
+        }
+        public string TidsDifferens(int startTid)
+        {
+            int minuter;
+            int sekunder;
+            if (startTid> 60)
+            {
+                minuter = startTid / 60;
+                sekunder = startTid % 60;
+                return ($"+{minuter}.{sekunder}");
+            }
+            else
+            {
+                return startTid.ToString();
+            }
+            
         }
   
             
