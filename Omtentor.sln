@@ -21,7 +21,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvattTenta - AVKLARAD", "Tv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matvarutenta - AVKLARAD", "Matvarutenta\Matvarutenta - AVKLARAD.csproj", "{1D3298AB-77A5-414F-A754-31B86F783185}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skidtenta", "Skidtenta\Skidtenta.csproj", "{919D07FF-16FE-4798-9F98-645BC5F9CD9A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skidtenta - AVKLARAD", "Skidtenta\Skidtenta - AVKLARAD.csproj", "{919D07FF-16FE-4798-9F98-645BC5F9CD9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NOTES", "NOTES\NOTES.csproj", "{7524903D-49AA-4010-8CF6-BA72D02B49EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadmintonTenta", "BadmintonTenta\BadmintonTenta.csproj", "{D322A225-79D3-46DF-A4A5-6440F156C2D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{919D07FF-16FE-4798-9F98-645BC5F9CD9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{919D07FF-16FE-4798-9F98-645BC5F9CD9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{919D07FF-16FE-4798-9F98-645BC5F9CD9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7524903D-49AA-4010-8CF6-BA72D02B49EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7524903D-49AA-4010-8CF6-BA72D02B49EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7524903D-49AA-4010-8CF6-BA72D02B49EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7524903D-49AA-4010-8CF6-BA72D02B49EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D322A225-79D3-46DF-A4A5-6440F156C2D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D322A225-79D3-46DF-A4A5-6440F156C2D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D322A225-79D3-46DF-A4A5-6440F156C2D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D322A225-79D3-46DF-A4A5-6440F156C2D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
